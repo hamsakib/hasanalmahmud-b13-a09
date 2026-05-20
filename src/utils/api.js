@@ -13,7 +13,6 @@ api.interceptors.request.use(config => {
   return config
 })
 
-// ─── Rooms ────────────────────────────────────────────────────────────────────
 export const fetchRooms = (params = {}) =>
   api.get('/api/rooms', { params })
 
@@ -32,7 +31,6 @@ export const deleteRoom = (id) =>
 export const fetchMyRooms = () =>
   api.get('/api/rooms/my-listings')
 
-// ─── Bookings ─────────────────────────────────────────────────────────────────
 export const createBooking = (data) =>
   api.post('/api/bookings', data)
 

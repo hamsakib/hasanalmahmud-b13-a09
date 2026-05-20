@@ -30,7 +30,6 @@ export default function AllRooms() {
   const [filterOpen, setFilterOpen] = useState(false)
   const [debouncedSearch, setDebouncedSearch] = useState('')
 
-  // debounce search input
   useEffect(() => {
     const t = setTimeout(() => setDebouncedSearch(search), 400)
     return () => clearTimeout(t)
