@@ -54,11 +54,12 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {[
                 { to: '/', label: 'Home' },
-                { to: '/rooms', label: 'Browse Rooms' },
+                { to: '/rooms', label: 'Rooms' },
+                { to: '/#about', label: 'About' },
                 { to: '/add-room', label: 'List a Room' },
                 { to: '/my-bookings', label: 'My Bookings' },
               ].map(link => (
-                <li key={link.to}>
+                <li key={link.label}>
                   <Link
                     to={link.to}
                     className="text-sm text-slate-400 hover:text-amber-400 transition-colors"
