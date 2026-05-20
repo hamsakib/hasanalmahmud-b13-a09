@@ -20,36 +20,40 @@ export function AuthProvider({ children }) {
   const registerWithEmail = async (name, email, password, photoURL) => {
     const cred = await createUserWithEmailAndPassword(auth, email, password)
     await updateProfile(cred.user, { displayName: name, photoURL })
-    await axios.post(
+    const res = await axios.post(
       `${API}/api/auth/register`,
       { name, email, photoURL },
       { withCredentials: true }
     )
+    if (res.data?.token) sessionStorage.setItem('sn_token', res.data.token)
     return cred
   }
 
   const loginWithEmail = async (email, password) => {
     const cred = await signInWithEmailAndPassword(auth, email, password)
-    await axios.post(
+    const res = await axios.post(
       `${API}/api/auth/login`,
       { email },
       { withCredentials: true }
     )
+    if (res.data?.token) sessionStorage.setItem('sn_token', res.data.token)
     return cred
   }
 
   const loginWithGoogle = async () => {
     const cred = await signInWithPopup(auth, googleProvider)
     const { displayName: name, email, photoURL } = cred.user
-    await axios.post(
+    const res = await axios.post(
       `${API}/api/auth/google`,
       { name, email, photoURL },
       { withCredentials: true }
     )
+    if (res.data?.token) sessionStorage.setItem('sn_token', res.data.token)
     return cred
   }
 
   const logout = async () => {
+    sessionStorage.removeItem('sn_token')
     await signOut(auth)
     await axios.post(`${API}/api/auth/logout`, {}, { withCredentials: true })
   }
