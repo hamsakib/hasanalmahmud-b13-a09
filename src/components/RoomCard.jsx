@@ -35,7 +35,7 @@ export default function RoomCard({ room }) {
         />
         <div className="absolute top-3 right-3">
           <span className="bg-amber-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow">
-            ${hourlyRate}/hr
+            ৳{hourlyRate}/hr
           </span>
         </div>
       </div>
@@ -62,7 +62,7 @@ export default function RoomCard({ room }) {
           </span>
           <span className="flex items-center gap-1">
             <HiOutlineCurrencyDollar className="text-amber-500 w-4 h-4" />
-            ${hourlyRate}/hr
+            ৳{hourlyRate}/hr
           </span>
         </div>
 

@@ -122,7 +122,7 @@ export default function MyListings() {
                           </span>
                           <span className="flex items-center gap-1">
                             <HiOutlineCurrencyDollar className="text-amber-500 w-3.5 h-3.5" />
-                            ${room.hourlyRate}/hr
+                            ৳{room.hourlyRate}/hr
                           </span>
                           <span className="flex items-center gap-1">
                             <HiOutlineBookmark className="text-amber-500 w-3.5 h-3.5" />

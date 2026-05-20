@@ -178,7 +178,7 @@ export default function AllRooms() {
                 {/* Rate range */}
                 <div>
                   <h4 className="font-semibold text-navy-900 dark:text-white text-sm mb-3">
-                    Hourly Rate ($/hr)
+                    Hourly Rate (৳/hr)
                   </h4>
                   <div className="flex items-center gap-3">
                     <input

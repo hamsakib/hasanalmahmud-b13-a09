@@ -80,7 +80,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5 text-sm text-slate-400">
                 <HiOutlinePhone className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                +1 (555) 234-5678
+                +880 1712-345678
               </li>
             </ul>
             <div className="mt-5 p-3 bg-navy-800/50 rounded-lg">

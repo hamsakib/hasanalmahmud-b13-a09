@@ -223,7 +223,7 @@ export default function RoomDetails() {
                 </span>
                 <span className="flex items-center gap-1.5 bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 px-3 py-1.5 rounded-lg text-sm font-bold">
                   <HiOutlineCurrencyDollar className="w-4 h-4" />
-                  ${room.hourlyRate}/hr
+                  ৳{room.hourlyRate}/hr
                 </span>
               </div>
 
@@ -265,7 +265,7 @@ export default function RoomDetails() {
             <div className="lg:col-span-1">
               <div className="card p-6 sticky top-20">
                 <div className="text-center mb-5">
-                  <span className="font-display text-3xl font-bold text-amber-500">${room.hourlyRate}</span>
+                  <span className="font-display text-3xl font-bold text-amber-500">৳{room.hourlyRate}</span>
                   <span className="text-slate-400 text-sm"> / hour</span>
                 </div>
 
@@ -389,7 +389,7 @@ export default function RoomDetails() {
                   {startTime && endTime && (
                     <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg p-3 flex items-center justify-between">
                       <span className="text-sm text-amber-700 dark:text-amber-400 font-medium">Total Cost</span>
-                      <span className="font-bold text-amber-600 dark:text-amber-400 text-lg">${totalCost()}</span>
+                      <span className="font-bold text-amber-600 dark:text-amber-400 text-lg">৳{totalCost()}</span>
                     </div>
                   )}
 
@@ -470,7 +470,7 @@ export default function RoomDetails() {
                       <input type="number" name="capacity" value={editForm.capacity || ''} onChange={handleEditChange} className="input-field" min={1} required />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-navy-900 dark:text-white mb-1">Rate ($/hr)</label>
+                      <label className="block text-sm font-medium text-navy-900 dark:text-white mb-1">Rate (৳/hr)</label>
                       <input type="number" name="hourlyRate" value={editForm.hourlyRate || ''} onChange={handleEditChange} className="input-field" min={1} required />
                     </div>
                   </div>

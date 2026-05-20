@@ -53,7 +53,7 @@ export default function AddRoom() {
     if (!form.image.trim()) e.image = 'Image URL is required'
     if (!form.floor.trim()) e.floor = 'Floor is required'
     if (!form.capacity || form.capacity < 1) e.capacity = 'Capacity must be at least 1'
-    if (!form.hourlyRate || form.hourlyRate < 1) e.hourlyRate = 'Rate must be at least $1'
+    if (!form.hourlyRate || form.hourlyRate < 1) e.hourlyRate = 'Rate must be at least ৳1'
     return e
   }
 
@@ -200,7 +200,7 @@ export default function AddRoom() {
                   <div>
                     <label className="block text-sm font-medium text-navy-900 dark:text-white mb-1">
                       <HiOutlineCurrencyDollar className="inline w-4 h-4 mr-1 text-amber-500" />
-                      Rate ($/hr) <span className="text-red-500">*</span>
+                      Rate (৳/hr) <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="number"

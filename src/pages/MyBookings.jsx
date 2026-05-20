@@ -162,7 +162,7 @@ export default function MyBookings() {
                             </div>
                             <div className="flex items-center gap-1.5 text-xs font-semibold text-amber-600 dark:text-amber-400">
                               <HiOutlineCurrencyDollar className="w-3.5 h-3.5 flex-shrink-0" />
-                              ${booking.totalCost} total
+                              ৳{booking.totalCost} total
                             </div>
                           </div>
 
