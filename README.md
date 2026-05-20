@@ -1,6 +1,6 @@
 # StudyNook 📚
 
-> **Live Site:** https://studynook-client.vercel.app
+> **Live Site:** https://hasanalmahmud-b13-a09.vercel.app
 
 A full-stack study room booking platform where students and library users can list private study rooms and other registered users can browse, search, filter, and book them for specific date and time slots.
 
