@@ -41,7 +41,7 @@ const testimonials = [
   {
     name: 'Priya Nair',
     role: 'Law Student, Yale',
-    text: 'I listed my department's study room on StudyNook and it gets fully booked every week. Great passive income for our student org.',
+    text: "I listed my department's study room on StudyNook and it gets fully booked every week. Great passive income for our student org.",
     avatar: 'https://randomuser.me/api/portraits/women/65.jpg',
     rating: 5,
   },
